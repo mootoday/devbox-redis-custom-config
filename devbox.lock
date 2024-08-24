@@ -1,0 +1,54 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "redis@latest": {
+      "last_modified": "2024-08-14T11:41:26Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/0cb2fd7c59fed0cd82ef858cbcbdb552b9a33465#redis",
+      "source": "devbox-search",
+      "version": "7.2.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6i24pj69i3v1s91l0l4f9386qzjxg897-redis-7.2.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6i24pj69i3v1s91l0l4f9386qzjxg897-redis-7.2.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lvcma0qz40lprz5ja5g5l7lbl6zax2pq-redis-7.2.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lvcma0qz40lprz5ja5g5l7lbl6zax2pq-redis-7.2.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/n1x2p3aam0f82c32qrs0mj1x5ahcsfap-redis-7.2.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/n1x2p3aam0f82c32qrs0mj1x5ahcsfap-redis-7.2.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/10f3hl7x9gk10gxhbpcw91mlyi7wfw2g-redis-7.2.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/10f3hl7x9gk10gxhbpcw91mlyi7wfw2g-redis-7.2.5"
+        }
+      }
+    }
+  }
+}

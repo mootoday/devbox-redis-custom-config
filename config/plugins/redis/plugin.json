@@ -1,0 +1,15 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "packages": {
+    "redis": {
+      "version":        "latest",
+//      "disable_plugin": true
+    }
+  },
+  "shell": {
+    "init_hook": [
+      "echo 'This plugin init_hook script runs for the redis plugin'"
+    ]
+  }
+}

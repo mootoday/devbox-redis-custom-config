@@ -1,0 +1,17 @@
+version: "0.5"
+
+processes:
+  redis:
+    command: "redis-server $REDIS_CONF --port $REDIS_PORT"
+    log_location: $REDIS_LOGS_DIR
+    availability:
+      restart: on_failure
+      max_restarts: 5
+    readiness_probe:
+      exec:
+        command: "redis-cli ping"
+      initial_delay_seconds: 5
+      period_seconds: 10
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 5
