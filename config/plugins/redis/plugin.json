@@ -4,8 +4,16 @@
   "packages": {
     "redis": {
       "version":        "latest",
-//      "disable_plugin": true
+      "disable_plugin": true
     }
+  },
+  "env": {
+    "REDIS_LOGS_DIR": "{{.Virtenv}}/logs",
+    "REDIS_PORT": "6379",
+    "REDIS_CONF": "{{ .DevboxDir }}/redis.conf"
+  },
+  "create_files": {
+    "{{.Virtenv}}/process-compose.yaml": "./process-compose.yaml"
   },
   "shell": {
     "init_hook": [
