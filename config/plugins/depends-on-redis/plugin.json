@@ -1,0 +1,8 @@
+{
+  "name": "depends-on-redis",
+  "version": "1.0.0",
+  "packages": {},
+  "create_files": {
+    "{{.Virtenv}}/process-compose.yaml": "./process-compose.yaml"
+  },
+}

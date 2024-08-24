@@ -1,0 +1,10 @@
+version: "0.5"
+
+processes:
+  depends_on_redis:
+    command: |
+      echo "This runs for 10 seconds once Redis is ready."
+      sleep 10
+    depends_on:
+      redis:
+        condition: process_healthy
